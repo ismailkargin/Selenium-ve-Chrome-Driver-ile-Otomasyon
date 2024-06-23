@@ -1,9 +1,15 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Chrome tarayıcısını başlatma
+# ChromeOptions oluşturma ---- ARKAPLAN İÇİN -----
+# options = Options()
+# options.add_argument('--headless=new') # Tarayıcıyı arka planda çalıştırmak için
+# driver = webdriver.Chrome(options=options)
+
+# Chrome tarayıcısını başlatma ----NORMAL ÇALIŞTIRMA---
 driver = webdriver.Chrome()
 
 try:
