@@ -19,6 +19,8 @@ try:
     # Butona tıklama
     giris_button.click()
 
+    # Sistemin açılmasını bekleme
+    wait.until(EC.url_to_be("https://belgenet.csb.gov.tr/edys-web/mainInbox.xhtml"))
     # Burada istediğiniz ek işlemleri yapabilirsiniz (örneğin, oturumu yönetmek veya başka sayfalara gitmek)
     # Örnek olarak, bir sonraki sayfaya geçiş için bekleyebilirsiniz:
     # wait.until(EC.url_to_be("https://belgenet.csb.gov.tr/sonraki_sayfa"))
